@@ -34,6 +34,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'devise'
+gem 'hamburgers'
 gem 'simplecov', require: false, group: :test
 
 group :development, :test do
