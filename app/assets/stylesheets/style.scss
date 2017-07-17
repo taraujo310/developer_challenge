@@ -101,6 +101,7 @@ label {
 
 .container {
   width: 93%;
+  min-width: 320px;
 }
 
 header {
@@ -149,6 +150,10 @@ nav {
 }
 
 @media (min-width: 980px) {
+
+}
+
+@media (min-width: 1280px) {
   header {
     .menu-toggler {
       display: none;
@@ -167,19 +172,31 @@ nav {
   }
 
   nav {
+    background: #fff;
+    box-shadow: 0 1px 3px #ccc;
+
     .menu {
-      left: 0;
+      left: auto !important;
       height: auto;
       position: relative;
-      width: 100%;
+      width: 1200px;
+      overflow: hidden;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+
+    .menu h3 {
+      display: none;
+    }
+
+    li {
+      float: left;
       background: #fff;
     }
   }
-}
 
-@media (min-width: 1280px) {
   .container {
-    width: 1000px;
+    width: 1200px;
   }
 
 
