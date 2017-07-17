@@ -200,6 +200,7 @@ header {
 
 nav {
   .menu {
+    top: 0;
     left: -200px;
     height: 100%;
     position: fixed;
@@ -226,6 +227,14 @@ nav {
   tr:nth-child(even) {
     background: #f8f8f8;
   }
+}
+
+.apple_pagination {
+  margin: 25px auto;
+}
+
+.apple_pagination a:hover {
+  background: #ff691d;
 }
 
 @media (min-width: 480px) {
