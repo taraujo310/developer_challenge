@@ -35,6 +35,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'devise'
 gem 'hamburgers'
+gem 'paperclip'
 gem 'simplecov', require: false, group: :test
 
 group :development, :test do

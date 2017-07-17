@@ -4,8 +4,16 @@
 <div id="posts">
   <% @posts.each do |post| %>
     <div class="post">
-    <h2><%= post.title %></h2>
-    <p><%= post.body %></p>
-  </div>
+      <h2 class='title'>
+        <%= link_to post.title, post %>
+      </h2>
+      <p class='excerpt'><%= "#{post.body[0..250]}..." %></p>
+      <div class="image">
+        <%= image_tag post.image.url %>
+      </div>
+      <div class="separator"></div>
+      <h3 class='subtitle'><%= post.subtitle %></h3>
+      <p class='body'><%= post.body %></p>
+    </div>
   <% end %>
 </div>
