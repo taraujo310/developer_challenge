@@ -7,11 +7,14 @@
         </span>
       </button>
     </div>
-    
-    <div class="logo">
-      UM SITE
-      <%= image_tag('webedia_logo') %>
-      GROUP
-    </div>
+
+    <%= link_to root_path do %>
+      <div class="logo">
+        UM SITE
+
+        <%= image_tag('webedia_logo') %>
+        GROUP
+      </div>
+    <% end %>
   </header>
 </div>
