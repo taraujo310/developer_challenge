@@ -38,6 +38,7 @@ gem 'hamburgers'
 gem 'paperclip'
 gem 'simplecov', require: false, group: :test
 gem 'will_paginate', '~> 3.1.0'
+gem 'faker'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -49,7 +50,6 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   gem 'factory_girl_rails'
   gem 'awesome_print'
-  gem 'faker'
 end
 
 group :development do
